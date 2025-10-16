@@ -1,6 +1,7 @@
-package com.reasure.tieredtool;
+package com.reasure.tieredtools;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import org.slf4j.Logger;
 
@@ -11,5 +12,10 @@ public class TieredToolMod {
 
     public TieredToolMod() {
 		
+    }
+
+    public static ResourceLocation loc(String path) {
+        //noinspection removal
+        return new ResourceLocation(MODID, path);
     }
 }
