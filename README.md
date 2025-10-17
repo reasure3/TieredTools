@@ -1,5 +1,5 @@
 [![Download On Curseforge](https://img.shields.io/curseforge/dt/1364524?logo=curseforge)](https://www.curseforge.com/minecraft/mc-mods/tiered-tools)
-[![Download On Modrinth](https://img.shields.io/modrinth/dt/tiered-tools?logo=modrinth)](https://modrinth.com/mod/tiered-tools)&ensp;
+[![Download On Modrinth](https://img.shields.io/modrinth/dt/tiered-tools?logo=modrinth)](https://modrinth.com/mod/tiered-tools) &ensp;
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 [한국어 문서 보기](./README_KR.md)
@@ -12,6 +12,7 @@ This mod completely overhauls Minecraft's tool progression system. You can no lo
 
 - **Tiered Tool Progression**: Introduces a new system where you upgrade your tools sequentially, starting from wood/leather all the way to netherite.
 - **Vanilla Recipes Disabled**: All default tool crafting recipes (except for wood/leather) are disabled.
+- **Gold Tool Buff**: The performance of gold tools has been buffed to be better than iron tools.
 - **Upgrade Templates**: Adds unique "Upgrade Smithing Templates" required for each tier.
 - **New Block: Stone Smithing Table**: Adds an early-game Stone Smithing Table. It can be damaged and destroyed with use.
 - **New Block: Reversion Table**: A new workbench that allows you to revert tools to their previous tier.
@@ -51,7 +52,14 @@ see [JEI](https://www.curseforge.com/minecraft/mc-mods/jei) for more details.
 ### 5. Reverting Tools
 
 If you've upgraded a tool by mistake or need a lower-tier tool, you can use the Reversion Table.
-Simply place an upgraded tool into the table, and it will instantly be converted back to its previous tier (e.g., Iron Pickaxe → Stone Pickaxe).
+Placing an upgraded item in it will instantly convert it to its previous tier (e.g., Iron Pickaxe → Stone Pickaxe).
+
+## 🏷️ Tag
+
+Items affected by the `durabilityMode` config are determined by the `unbreakable` item tag.
+You can change this list by creating a datapack or directly modifying the file at the path below.
+
+- File Path: `data/tieredtools/tags/items/unbreakable.json`
 
 ## ⚙️ Configuration
 

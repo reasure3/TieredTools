@@ -1,5 +1,5 @@
 [![Download On Curseforge](https://img.shields.io/curseforge/dt/1364524?logo=curseforge)](https://www.curseforge.com/minecraft/mc-mods/tiered-tools)
-[![Download On Modrinth](https://img.shields.io/modrinth/dt/tiered-tools?logo=modrinth)](https://modrinth.com/mod/tiered-tools)&ensp;
+[![Download On Modrinth](https://img.shields.io/modrinth/dt/tiered-tools?logo=modrinth)](https://modrinth.com/mod/tiered-tools) &ensp;
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 [원문 문서 보기](./README.md)
@@ -12,6 +12,7 @@
 
 - **단계별 강화**: 나무 도구 및 가죽 갑옷에서 시작하여 네더라이트 단계까지 차근차근 업그레이드하는 새로운 시스템을 도입합니다.
 - **기존 조합법 삭제**: 나무 도구와 가죽 갑옷을 제외한 모든 도구 및 갑옷의 기존 조합법이 삭제됩니다.
+- **금 도구 성능 상향**: 금 도구의 성능이 철 도구보다 좋게 상향 조정되었습니다.
 - **새 대장장이 형판**: 각 단계별로 강화하는데 필요한 고유한 '강화 대장장이 형판'이 추가됩니다.
 - **신규 블록: '임시 대장장이 작업대'**: 게임 초반에 사용할 수 있는 돌로 만든 대장장이 작업대가 추가됩니다. 사용 시 일정 확률로 파괴될 수 있습니다.
 - **신규 블록: '복구 작업대'**: 장비를 이전 단계로 되돌릴 수 있는 새로운 작업대입니다.
@@ -22,7 +23,7 @@
 ### 1. 시작하기
 먼저 기본적인 나무 도구를 제작하세요. 모든 여정은 나무 도구에서 시작됩니다!
 
-### 2. 돌 제련대 제작 및 사용 
+### 2. 임시 다장장이 작업대 제작 및 사용 
 초반 강화를 위해 **임시 다장장이 작업대**를 제작해야 합니다. 임시 대장장이 작업대는 사용 시 내구도가 닳으며 파괴될 수 있으니 주의하세요!
 
 ### 3. 강화 방법
@@ -49,6 +50,12 @@
 
 실수로 도구를 강화했거나 이전 단계의 도구가 필요한 경우, 복구 작업대를 사용할 수 있습니다.
 복구 작업대에 도구를 올려놓으면 즉시 이전 단계의 도구로 변환됩니다. (예: 철 곡괭이 → 돌 곡괭이)
+
+## 🏷️ 태그 (Tag)
+`durabilityMode` 설정에 의해 내구도 영향을 받는 도구들은 `unbreakable` 아이템 태그에 의해 결정됩니다.
+해당 태그를 직접 수정하여 이 목록을 변경할 수 있습니다.
+
+- 파일 경로: `data/tieredtools/tags/items/unbreakable.json`
 
 ## ⚙️ 설정 (Config)
 

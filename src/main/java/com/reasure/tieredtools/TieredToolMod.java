@@ -11,11 +11,14 @@ public class TieredToolMod {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public TieredToolMod() {
-		
+
     }
 
     public static ResourceLocation loc(String path) {
-        //noinspection removal
-        return new ResourceLocation(MODID, path);
+        return ResourceLocation.fromNamespaceAndPath(MODID, path);
+    }
+
+    public static Logger getLogger() {
+        return LOGGER;
     }
 }
