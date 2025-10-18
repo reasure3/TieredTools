@@ -13,12 +13,13 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import java.util.List;
 
 @Mixin(TierSortingRegistry.class)
-public abstract class TierSortingRegistryMixin {
+public class TierSortingRegistryMixin {
     @Shadow(remap = false)
     private static void processTier(Tier tier, ResourceLocation name, List<Object> afters, List<Object> befores) {}
 
     @Redirect(method = "<clinit>", remap = false, at = @At(value = "INVOKE",
-            target = "Lnet/minecraftforge/common/TierSortingRegistry;processTier(Lnet/minecraft/world/item/Tier;Lnet/minecraft/resources/ResourceLocation;Ljava/util/List;Ljava/util/List;)V", ordinal = 1)
+            target = "Lnet/minecraftforge/common/TierSortingRegistry;processTier(Lnet/minecraft/world/item/Tier;Lnet/minecraft/resources/ResourceLocation;Ljava/util/List;Ljava/util/List;)V",
+            ordinal = 1)
     )
     private static void modifyGoldTierOrder(Tier tier, ResourceLocation name, List<Object> afters, List<Object> befores) {
         if (tier == Tiers.GOLD) {

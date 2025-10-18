@@ -28,7 +28,8 @@ public class ItemUtil {
 
     private static void removeAttribute(Multimap<Attribute, AttributeModifier> attributeMap, Attribute attribute, UUID uuid) {
         attributeMap.get(attribute).stream()
-                .filter(Objects::nonNull).filter(modifier -> modifier.getId().equals(uuid))
+                .filter(Objects::nonNull)
+                .filter(modifier -> modifier.getId().equals(uuid))
                 .findFirst()
                 .ifPresent(modifier -> attributeMap.remove(attribute, modifier));
     }
