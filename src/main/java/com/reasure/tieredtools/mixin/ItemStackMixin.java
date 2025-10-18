@@ -1,6 +1,6 @@
 package com.reasure.tieredtools.mixin;
 
-import com.reasure.tieredtools.TieredToolsTags;
+import com.reasure.tieredtools.util.TieredToolsTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;

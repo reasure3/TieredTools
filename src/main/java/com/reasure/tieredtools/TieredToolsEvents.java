@@ -1,5 +1,6 @@
 package com.reasure.tieredtools;
 
+import com.reasure.tieredtools.util.TieredToolsTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;

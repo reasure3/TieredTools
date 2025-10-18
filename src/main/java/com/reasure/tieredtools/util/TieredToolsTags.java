@@ -1,5 +1,6 @@
-package com.reasure.tieredtools;
+package com.reasure.tieredtools.util;
 
+import com.reasure.tieredtools.TieredToolMod;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
