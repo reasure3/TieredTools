@@ -15,23 +15,10 @@ public class TiersMixin {
     @Shadow @Final @Mutable
     private int level;
 
-    @Shadow @Final @Mutable
-    private int uses;
-
-    @Shadow @Final @Mutable
-    private float speed;
-
-    @Shadow @Final @Mutable
-    private float damage;
-
     @Inject(method = "<clinit>", at = @At("TAIL"))
     private static void modifyGoldTier(CallbackInfo cir) {
-        // Buff gold tier stats to make it viable between iron and diamond
-        TieredToolMod.getLogger().info("Modifying Gold Tier Stats: level 0->2, uses 32->512, speed 12.0->7.0, damage 0.0->2.5");
-        TiersMixin gold = (TiersMixin) (Object) Tiers.GOLD;
-        gold.level = 2;
-        gold.uses = 512;
-        gold.speed = 7.0f;
-        gold.damage = 2.5f;
+        // Buff gold tier to make it viable between iron and diamond
+        TieredToolMod.getLogger().info("Modifying Gold Tier: level 0->2");
+        ((TiersMixin) (Object) Tiers.GOLD).level = 2;
     }
 }
